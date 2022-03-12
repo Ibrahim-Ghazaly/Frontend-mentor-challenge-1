@@ -1,0 +1,133 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  :root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s;
+    --second-transition: .6s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+  }
+
+  body {
+    font-family: 'Lexend Deca', sans-serif;
+    Font-size: 15px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+   
+  p{
+      color: hsla(0, 0%, 100%, 0.75);
+  }
+   
+  h2{
+   color: hsl(0, 0%, 95%);
+    /* font-family: 'Big Shoulders Display', cursive;  */
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ /* Small */
+ @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  }
+  
+  .container .box:first-child {
+    border-radius: 5px 0 0 5px;
+    background-color:hsl(31, 77%, 52%) ;
+}
+
+.container .box:nth-child(2) {
+   
+    background-color:hsl(184, 100%, 22%) ;
+}
+
+.container .box:last-child {
+    border-radius: 0 5px 5px 0;
+    background-color:hsl(179, 100%, 13%) ;
+}
+
+.container .box {
+      padding:50px;
+ }
+
+ @media(max-width:776px) {
+    .container .box {
+        padding:55px;
+   }
+ }
+ .container .box h2{
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.container .box p {
+    line-height:2; 
+    margin-bottom: 100px;  
+}
+
+@media(max-width:776px) {
+    .container .box p {
+        margin-bottom:30px;
+   }
+ }
+
+.container .box a{
+  display: block;
+  padding: 15px 30px;
+  background-color:hsl(0, 0%, 95%);
+  width: fit-content; 
+  border-radius: 30px;
+  text-transform: capitalize;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition: .5s;
+}
+
+
+.container .box:first-child a{
+    color:hsl(31, 77%, 52%) ;
+  }
+  
+.container .box:nth-child(2) a{
+    color:hsl(184, 100%, 22%);
+   }
+.container .box:last-child a{
+    color:hsl(179, 100%, 13%)  ;
+}
+   
+.container .box a:hover{
+    background-color: inherit;
+    color:hsl(0, 0%, 95%); ;
+  }
+  
